@@ -1,0 +1,74 @@
+---
+---
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#cv" class="nav-link">CV</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="#projects" class="nav-link">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 4);
+  }
+
+  nav {
+    display: flex;
+    gap: calc(var(--spacing-unit) * 4);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: var(--color-text);
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      gap: calc(var(--spacing-unit) * 2);
+    }
+
+    .container {
+      padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+    }
+  }
+</style>

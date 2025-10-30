@@ -1,0 +1,163 @@
+---
+const publications = [
+  {
+    title: "Trump Risks U.S. Credibility With Intensifying Trade Wars",
+    publication: "StratNews Global",
+    date: "August 2025",
+    link: "https://stratnewsglobal.com/united-states/trump-risks-u-s-credibility-with-intensifying-trade-wars/",
+    type: "News Article"
+  },
+  {
+    title: "Pakistan’s Perilous Balancing Act With America and China",
+    publication: "StratNews Global",
+    date: "June 2025",
+    link: "https://stratnewsglobal.com/pakistan/pakistans-perilous-balancing-act-with-america-and-china/",
+    type: "News Article"
+  },
+  {
+    title: "How Trump is Reshaping UK Policy on Defence, Trade and Immigration",
+    publication: "StratNews Global",
+    date: "May 2025",
+    link: "https://stratnewsglobal.com/world-news/how-trump-is-reshaping-uk-policy-on-defence-trade-and-immigration/",
+    type: "News Article"
+  }
+];
+---
+
+<section id="publications" class="publications">
+  <div class="container">
+    <h2>Articles</h2>
+    <p class="intro">
+      A selection of my published news pieces. 
+    </p>
+
+    <div class="publications-grid">
+      {publications.map((pub) => (
+        <article class="publication-card">
+          <span class="badge">{pub.type}</span>
+          <h3>{pub.title}</h3>
+          <div class="publication-meta">
+            <span class="publication-name">{pub.publication}</span>
+            <span class="date">{pub.date}</span>
+          </div>
+          <a href={pub.link} target="_blank" rel="noopener noreferrer" class="read-more">
+            Read Article
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .publications {
+    padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 4);
+    background-color: var(--color-background);
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+    color: var(--color-primary);
+  }
+
+  .intro {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    margin-bottom: calc(var(--spacing-unit) * 6);
+    max-width: 800px;
+  }
+
+  .publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: calc(var(--spacing-unit) * 4);
+  }
+
+  .publication-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: calc(var(--spacing-unit) * 4);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publication-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-accent);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);
+    background-color: var(--color-accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .publication-card h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    line-height: 1.4;
+  }
+
+  .publication-meta {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 0.5);
+    margin-bottom: calc(var(--spacing-unit) * 3);
+    flex-grow: 1;
+  }
+
+  .publication-name {
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .date {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit));
+    color: var(--color-accent);
+    font-weight: 600;
+    transition: gap 0.2s ease;
+  }
+
+  .read-more:hover {
+    gap: calc(var(--spacing-unit) * 1.5);
+  }
+
+  @media (max-width: 768px) {
+    .publications {
+      padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 3);
+    }
+
+    .publications-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

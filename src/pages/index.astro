@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import CV from '../components/CV.astro';
+import Publications from '../components/Publications.astro';
+import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Daksh Dewgun - Academic Portfolio">
+  <Header />
+  <main>
+    <Hero />
+    <About />
+    <CV />
+    <Publications />
+    <Projects />
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    min-height: 100vh;
+  }
+</style>

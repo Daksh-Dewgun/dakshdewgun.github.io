@@ -1,0 +1,211 @@
+---
+---
+
+<section id="cv" class="cv">
+  <div class="container">
+    <h2>Curriculum Vitae</h2>
+
+    <div class="cv-section">
+      <h3>Education</h3>
+      <div class="cv-item">
+        <div class="cv-header">
+          <div>
+            <h4>MSc AI and Government</h4>
+            <p class="institution">University of Birmingham</p>
+          </div>
+          <span class="date">2025 - 2026</span>
+        </div>
+        <p class="description"><b>Modules:</b><br> AI for Government and Policy<br> Algorithms for Data Science<br> Current Topics in Data Science<br> Governance and Politics of AI<br> Programming for Data Science </p>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-header">
+          <div>
+            <h4>LLB Law and Politics</h4>
+            <p class="institution">Cardiff University</p>
+          </div>
+          <span class="date">2021 - 2024</span>
+        </div>
+        <p class="description">Dissertation: "A Welsh Analysis: How do Niche Parties differ in their Issue Strategies from Mainstream Parties" - Best Politics Dissertation 2023/24 (78%)</p>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h3>Professional Experience</h3>
+      <div class="cv-item">
+        <div class="cv-header">
+          <div>
+            <h4>Research Assistant</h4>
+            <p class="institution">University of Birmingham, Birmingham, United Kingdom</p>
+          </div>
+          <span class="date">Jan 2025-Apr 2025</span>
+        </div>
+        <p class="description">Operationalised Large Language Models (LLMs) for political research through an analysis of pledge data from post-devolution Welsh party manifestos.<br>
+Implemented Structural Topic Modelling (STM) on pledge data to distinguish pledge-making strategies in a dominant party system.<br>
+Created a handbook on querying LLMs via R programming for researchers across different departments.</p>
+      </div>
+
+          <div class="cv-item">
+        <div class="cv-header">
+          <div>
+            <h4>Research Assistant</h4>
+            <p class="institution">Cardiff University, Cardiff, United Kingdom</p>
+          </div>
+          <span class="date">Aug 2023-Sept 2023</span>
+        </div>
+        <p class="description">Collaborated as co-author with Prof. Christian Arnold, Dr. Jac Larner (Cardiff University) and Dr. Fraser McMillan (University of Edinburgh).<br>
+Implemented R and Machine Learning methods to analyse Welsh manifestos of the post-devolution era.<br>
+Ensured successful completion of tasks within strict deadlines, analysing qualitative and quantitative data, creating reports and performing administrative duties simultaneously.</p>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h3>Research Interests</h3>
+      <ul class="interests-list">
+        <li>AI and Political Behaviour</li>
+        <li>Party Competition</li>
+        <li>Computational Text Analysis</li>
+        <li>Data-Driven Governance</li>
+        <li>Law and Public Policy</li>
+      </ul>
+    </div>
+
+    <div class="download-section">
+      <a href="/DakshDewgunCV.pdf" class="download-btn" download>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Full CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cv {
+    padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 4);
+    background-color: var(--color-surface);
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: calc(var(--spacing-unit) * 6);
+    color: var(--color-primary);
+  }
+
+  .cv-section {
+    margin-bottom: calc(var(--spacing-unit) * 6);
+  }
+
+  .cv-section h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-unit) * 3);
+    padding-bottom: calc(var(--spacing-unit));
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .cv-item {
+    margin-bottom: calc(var(--spacing-unit) * 4);
+    padding: calc(var(--spacing-unit) * 3);
+    background-color: var(--color-background);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+  }
+
+  .cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    gap: calc(var(--spacing-unit) * 2);
+  }
+
+  .cv-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+  }
+
+  .institution {
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .date {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  .interests-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: calc(var(--spacing-unit) * 2);
+  }
+
+  .interests-list li {
+    padding: calc(var(--spacing-unit) * 2);
+    background-color: var(--color-background);
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    color: var(--color-secondary);
+    font-weight: 500;
+  }
+
+  .download-section {
+    margin-top: calc(var(--spacing-unit) * 6);
+    text-align: center;
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 1.5);
+    padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .download-btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .cv {
+      padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 3);
+    }
+
+    .cv-header {
+      flex-direction: column;
+    }
+
+    .date {
+      margin-top: calc(var(--spacing-unit));
+    }
+
+    .interests-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

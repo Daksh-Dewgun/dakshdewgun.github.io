@@ -1,0 +1,40 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container">
+    <p>&copy; {currentYear} Daksh Dewgun. All rights reserved.</p>
+    <p class="hosted">Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 4);
+    text-align: center;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: calc(var(--spacing-unit));
+    opacity: 0.9;
+  }
+
+  .hosted {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      padding: calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 3);
+    }
+  }
+</style>
